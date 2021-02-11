@@ -2,7 +2,7 @@
 
 I created that project for my final exam at ENSET-M, Machine learning.
 
-Video explain the code source of my project : [Code source explained]()
+Video explain the code source of my project : [Code source explained](https://www.youtube.com/watch?v=bElwmYEJnik&feature=youtu.be)
 
 ## What is the project about
 
