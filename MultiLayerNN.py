@@ -80,6 +80,10 @@ class MultiLayerNN:
 
     def evaluate(self, real, predicted):
         self.evaluator.compute_confusion_matrix(real, predicted)
+        self.accuracy = self.evaluator.accuracy_metric(real, predicted)
+
+    def get_accuracy(self):
+        return self.accuracy
 
     def print_confusion_matrix(self):
         self.evaluator.print_nicely()

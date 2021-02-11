@@ -21,9 +21,13 @@ y = np.array(np.logical_xor(X[:, 0] > 0, X[:, 1] > 0), dtype=int)
 
 
 # Creating model
-model1 = MultiLayerNN(2, 6, 1, bias_iniatlisation_methode='ones')
-model2 = MultiLayerNN(2, 6, 1, bias_iniatlisation_methode='ones')
-model3 = MultiLayerNN(2, 6, 1, bias_iniatlisation_methode='ones')
+hidden_layer_size = 6
+model1 = MultiLayerNN(2, hidden_layer_size, 1,
+                      bias_iniatlisation_methode='ones')
+model2 = MultiLayerNN(2, hidden_layer_size, 1,
+                      bias_iniatlisation_methode='ones')
+model3 = MultiLayerNN(2, hidden_layer_size, 1,
+                      bias_iniatlisation_methode='ones')
 
 # Learning
 print("model {} | learning_rate : {:.4f} | function : {}".format(1, 0.01, 'LeakyReLU'))
